@@ -2,18 +2,19 @@
 
 #app {
     font-family: "Roboto", Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
     color: #2c3e50;
+    height: 100vh;
 }
 
 .content {
     line-height: 1.5;
-
     animation-name: fading;
     animation-delay: 2s;
     animation-iteration-count: infinite;
+}
+
+.centralized-text {
+    text-align: center;
 }
 
 .click-button {
@@ -30,6 +31,7 @@
     animation-name: color-change;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    cursor: pointer;
 }
 
 @keyframes color-change {
@@ -64,4 +66,43 @@
     60% {
         transform: translate3d(0, 4px, 0);
     }
+}
+
+.container-center {
+    margin: auto;
+    width: 500px;
+    padding: 10% 0;
+}
+
+.bg-default {
+    background-color: #4AA0EC;
+}
+
+.bg-default-light {
+    background-color: #58A8ED;
+}
+
+.bg-light {
+    background-color: #65AEEF;
+}
+
+.bg-sky {
+    background-color: #E5F2FC;
+}
+
+.full-screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 28px;
 }

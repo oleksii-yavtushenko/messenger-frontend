@@ -1,21 +1,24 @@
 <template>
   <div id="app">
-    <Menu></Menu>
-    <img class="shake-object" alt="Letter logo" src="./assets/logo.png">
-    <Home msg="Letter.com - lean and simple messenger"/>
+    <div class="bg-sky full-screen">
+    <router-view></router-view>
+    <footer class="footer">&copy;letter.com</footer>
+    </div>
   </div>
 </template>
 
 <script>
-import Menu from './components/Menu.vue'
-import Home from './components/Home.vue'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import VueCookies from 'vue-cookies'
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
+Vue.use(VueCookies)
+Vue.use(VueRouter)
 
 export default {
-  name: 'App',
-  components: {
-    Menu,
-    Home,
-  }
+  name: 'App'
 }
 </script>
 
