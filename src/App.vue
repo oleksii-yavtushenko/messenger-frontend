@@ -11,9 +11,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueCookies from 'vue-cookies'
-import Vuex from 'vuex'
 
-Vue.use(Vuex)
 Vue.use(VueCookies)
 Vue.use(VueRouter)
 

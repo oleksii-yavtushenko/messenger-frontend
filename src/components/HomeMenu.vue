@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: "Menu",
+  name: "HomeMenu",
   props: {
     msg: String
   }

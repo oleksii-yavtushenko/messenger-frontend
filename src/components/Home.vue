@@ -1,6 +1,6 @@
 <template>
   <div class="home centralized-text">
-    <Menu></Menu>
+    <HomeMenu/>
     <img class="shake-object" alt="Letter logo" src="./../assets/logo.png">
     <h1>Letter.com - lean and simple messenger</h1>
     <p class="content">
@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import Menu from "@/components/Menu";
+import HomeMenu from "@/components/HomeMenu";
 
 export default {
   name: 'Home',
   components: {
-    Menu
+    HomeMenu
   },
   computed: {
     username() {
