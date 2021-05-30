@@ -1,4 +1,4 @@
-# course-project
+# Letter.com VueJs project
 
 ## Project setup
 ```
